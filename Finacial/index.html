@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Udaan FinPlan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Udaan FinPlan</h1>
+    <nav>
+      <a href="#calculator">Loan Calculator</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="calculator">
+    <h2>Loan Calculator</h2>
+    <form onsubmit="calculateLoan(); return false;">
+      <input type="number" id="amount" placeholder="Loan Amount" required>
+      <input type="number" id="rate" placeholder="Annual Interest Rate (%)" required>
+      <input type="number" id="years" placeholder="Loan Term (Years)" required>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Request a Free Consultation</h2>
+    <form id="contactForm" action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Tell us your financial goals..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Udaan FinPlan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
