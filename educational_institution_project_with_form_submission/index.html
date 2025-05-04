@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CRYSTAL UNIVERSITY</h1>
+    <nav>
+      <ul>
+        <li><a href="#calculator">Tuition Fee Calculator</a></li>
+        <li><a href="#inquiry">Inquiry Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="calculator">
+    <h2>Tuition Fee Calculator</h2>
+    <form id="calculatorForm">
+      <label for="program">Choose your program:</label>
+      <select id="program">
+        <option value="undergraduate">Undergraduate</option>
+        <option value="postgraduate">Postgraduate</option>
+      </select>
+      <br>
+      <label for="semester">Number of semesters:</label>
+      <input type="number" id="semester" min="1" required>
+      <br>
+      <button type="button" onclick="calculateTuition()">Calculate Tuition</button>
+      <p id="tuitionResult"></p>
+    </form>
+  </section>
+
+  <section id="inquiry">
+    <h2>Prospective Student Inquiry</h2>
+    <form id="inquiryForm" action="https://formspree.io/f/Karnavjoshi2000@gmail.com" method="POST" onsubmit="handleSubmitForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 University  | Contact: info@university.com</p>
+  </footer>
+</body>
+</html>

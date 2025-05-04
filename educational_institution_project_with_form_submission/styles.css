@@ -1,0 +1,139 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #749fc0; /* University Blue */
+}
+
+h3, p {
+  font-size: 1.1em;
+}
+
+header {
+  background: #003366; /* Deep Blue */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Main Section Styles */
+section {
+  padding: 40px;
+  margin: 20px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="number"], input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #005a8b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366; /* Blue color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
